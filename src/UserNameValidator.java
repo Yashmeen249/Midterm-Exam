@@ -23,14 +23,14 @@ public class UserNameValidator {
         String password="";
         while(!validusername)
         {
-            System.out.println("Passwords must have at least onr character");
+            System.out.println("Usename must have at least one character");
             
             password = sc.nextLine();
             int specialCharCount=0;
            
             for(int i=0;i<username.length(); i++)
             {
-                if(!(Character.isLetterOrDigit(password.charAt(i))))
+                if(!(Character.isLetterOrDigit(username.charAt(i))))
                 {
                     
                     specialCharCount++;
